@@ -2,7 +2,8 @@ How to Use Pokémon TCG Browser
 Quick Start
 
 Open the application:
--Simply open index.php in your web browser
+-First you must open xampp to run the code in you vscode.
+-Simply open localhost/index.php in your web browser
 -No server setup required!
 
 Create an account:
