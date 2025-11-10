@@ -1,0 +1,134 @@
+/* Authentication Screen */
+.auth-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-container {
+    background: rgba(30, 30, 46, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid #3d7dca;
+}
+
+.auth-logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcb05;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 203, 5, 0.5);
+}
+
+.auth-title {
+    color: #ffcb05;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Security Indicators */
+.security-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.secure-icon {
+    color: #4CAF50;
+}
+
+.security-notice {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffc107;
+    font-size: 14px;
+}
+
+/* Auth Tabs */
+.auth-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+}
+
+.auth-tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #aaa;
+    transition: all 0.3s;
+}
+
+.auth-tab.active {
+    color: #ffcb05;
+    border-bottom: 3px solid #ffcb05;
+}
+
+/* Auth Forms */
+.auth-form {
+    display: none;
+    text-align: left;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.auth-submit-btn {
+    background: linear-gradient(135deg, #ffcb05 0%, #ff0000 100%);
+    color: #1a1a2e;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.auth-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(255, 203, 5, 0.4);
+}
+
+/* Auth Messages */
+.auth-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.auth-message.success {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.auth-message.error {
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+    border: 1px solid #f44336;
+}
